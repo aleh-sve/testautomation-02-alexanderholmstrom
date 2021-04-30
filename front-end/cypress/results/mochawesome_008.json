@@ -1,0 +1,201 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-04-30T19:22:53.054Z",
+    "end": "2021-04-30T19:23:03.041Z",
+    "duration": 9987,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f6e1b495-ea70-4a1c-999d-84e18707c670",
+      "title": "",
+      "fullFile": "cypress/integration/hello-percy.spec.js",
+      "file": "cypress/integration/hello-percy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+          "title": "Testsuite with Percy.io",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Perform login with valid inputs",
+              "fullTitle": "Testsuite with Percy.io Perform login with valid inputs",
+              "timedOut": null,
+              "duration": 2715,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// ->>we are at index (login) page!\ncy.log('At login page!');\ncy.percySnapshot('index-page');\nloginPage.checkLoginPageTitle();\nloginPage.performValidLogin('tester01', 'GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Tester Hotel Overview'); // ->>we are at dashboard page!\ncy.log('At dashboard page!');\ncy.percySnapshot('dashhboard-page');\nindexPage.performLogout('Login');",
+              "err": {},
+              "uuid": "1ce1ec64-a22e-4550-933c-9ede2942efc2",
+              "parentUUID": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform login with invalid inputs",
+              "fullTitle": "Testsuite with Percy.io Perform login with invalid inputs",
+              "timedOut": null,
+              "duration": 1648,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.checkLoginPageTitle();\nloginPage.performInvalidLogin(randomUsername, randomPassword, 'Bad username or password');",
+              "err": {},
+              "uuid": "f42b5b24-ef12-4d35-81b7-e6b5b28a39d6",
+              "parentUUID": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform login with invalid username",
+              "fullTitle": "Testsuite with Percy.io Perform login with invalid username",
+              "timedOut": null,
+              "duration": 1459,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.checkLoginPageTitle();\nloginPage.performInvalidLogin(randomUsername, '123', 'Bad username or password');",
+              "err": {},
+              "uuid": "d5d98590-9696-40f7-8592-194936bdb578",
+              "parentUUID": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform login with invalid password",
+              "fullTitle": "Testsuite with Percy.io Perform login with invalid password",
+              "timedOut": null,
+              "duration": 1626,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.checkLoginPageTitle();\nloginPage.performInvalidLogin('tester01', randomPassword, 'Bad username or password');",
+              "err": {},
+              "uuid": "c7ec3908-2b7c-4576-aeb2-3f27a3a20ac6",
+              "parentUUID": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform login without entering username",
+              "fullTitle": "Testsuite with Percy.io Perform login without entering username",
+              "timedOut": null,
+              "duration": 1392,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.checkLoginPageTitle();\nloginPage.performLoginNoUsername('GteteqbQQgSr88SwNExUQv2ydb7xuf8c', 'Bad username or password');",
+              "err": {},
+              "uuid": "f169e736-0bee-4d9a-8ba7-198a1e51fe0a",
+              "parentUUID": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Perform login without entering password",
+              "fullTitle": "Testsuite with Percy.io Perform login without entering password",
+              "timedOut": null,
+              "duration": 1089,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.checkLoginPageTitle();\nloginPage.performLoginNoPassword('tester01', 'Bad username or password');",
+              "err": {},
+              "uuid": "fc918f5d-6a5f-46f4-b9f2-571d8dbc3377",
+              "parentUUID": "554fdced-0763-42e1-b9f5-1857c4bd8687",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "1ce1ec64-a22e-4550-933c-9ede2942efc2",
+            "f42b5b24-ef12-4d35-81b7-e6b5b28a39d6",
+            "d5d98590-9696-40f7-8592-194936bdb578",
+            "c7ec3908-2b7c-4576-aeb2-3f27a3a20ac6",
+            "f169e736-0bee-4d9a-8ba7-198a1e51fe0a",
+            "fc918f5d-6a5f-46f4-b9f2-571d8dbc3377"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9929,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "chromeWebSecurity": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}

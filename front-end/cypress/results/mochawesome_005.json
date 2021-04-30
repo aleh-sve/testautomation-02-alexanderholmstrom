@@ -1,0 +1,110 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-04-30T18:41:14.129Z",
+    "end": "2021-04-30T18:41:14.459Z",
+    "duration": 330,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "6f624853-f877-4069-8916-c021f284b749",
+      "title": "",
+      "fullFile": "cypress/integration/hello-percy.spec.js",
+      "file": "cypress/integration/hello-percy.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a4dd6dde-eb19-4e5e-8272-33e1ccdaf819",
+          "title": "First example",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Test case 1",
+              "fullTitle": "First example Test case 1",
+              "timedOut": null,
+              "duration": 273,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://localhost:3000/login');\ncy.title().should('eq', 'Testers Hotel');\ncy.contains('Login'); // ->>we are at index (login) page!\ncy.log('At login page!');\ncy.percySnapshot('index-page');\ncy.get(':nth-child(1) > input').type('tester01');\ncy.get(':nth-child(2) > input').type('GteteqbQQgSr88SwNExUQv2ydb7xuf8c');\ncy.get('.btn').click();\ncy.contains('Welcome');\ncy.wait(3000); // ->>we are at dashboard page!\ncy.log('At dashboard page!');\ncy.percySnapshot('dashboard-page');",
+              "err": {
+                "message": "TypeError: cy.percySnapshot is not a function",
+                "estack": "TypeError: cy.percySnapshot is not a function\n    at Context.eval (https://localhost:3000/__cypress/tests?p=cypress/integration/hello-percy.spec.js:107:8)",
+                "diff": null
+              },
+              "uuid": "46b1b608-fefc-461a-8249-e4dc7ce6de76",
+              "parentUUID": "a4dd6dde-eb19-4e5e-8272-33e1ccdaf819",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "46b1b608-fefc-461a-8249-e4dc7ce6de76"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 273,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "chromeWebSecurity": false
+      },
+      "version": "5.2.0"
+    }
+  }
+}
